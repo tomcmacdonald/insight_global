@@ -2,7 +2,7 @@
 
 set -e
 
-# create control database
+# current directory
 DIR=$(pwd)
 
 # create database
