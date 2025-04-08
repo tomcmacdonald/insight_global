@@ -86,6 +86,8 @@ def get_latest_completed_download(id: str):
         where 
             id = ?
             and status = 'completed'
+        order by last_modified desc
+        limit 1
         """
         vals = (id,)
         cur.execute(sql, vals)
